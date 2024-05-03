@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Lab4</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<div class="root">
+		<div class="section">
+			<div class="container container__users">
+				<div class="container__btn">
+					<button type="button" class="btn btn__users">Fetch users</button>
+					<button class="btn btn__delete">Delete</button>
+					<input class="users__input" type="number" min="0"  value="5">
+				</div>
+				<div class="users__content">
+					<ul class="user-list"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="container container__modal">
+				<div class="modal__window">
+					<div class="modal__top">
+						<div>
+							<h1 class="modal__title">Task 2</h1>
+							<p class="modal__text" id="elementCount"></p>
+						</div>
+						<div class="modal__buttons">
+							<button class="modal__btn" id="allButton">All</button>
+							<button class="modal__btn" id="completedButton">Completed</button>
+							<button class="modal__btn" id="notCompletedButton">Not Completed</button>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="modal__form">
+						<div>
+							<label class="form__label-title" for="taskTitle">Task Title</label><br>
+							<input class="form__input" type="text" id="taskTitle" name="taskTitle">
+						</div>
+						<h2 class="form__label-title">At what stage</h2>
+						<form class="form" id="taskForm">
+							<input class="form__input-radio" type="radio" name="taskStatus" value="active" id="active">
+							<label for="active">Not Completed</label>
+							<br>
+							<input class="form__input-radio" type="radio" name="taskStatus" value="completed" id="completed">
+							<label for="completed">Completed</label>
+							<br>
+							<button class="form__btn" type="submit">Add task</button>
+						</form>
+					</div>
+				</div>
+				<div class="processes__contend">
+					<ul class="processes__list"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	</body>
+</html>
+
+
